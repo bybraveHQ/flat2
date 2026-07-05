@@ -1,0 +1,68 @@
+{
+  "name": "@bybrave/flat2",
+  "version": "6.0.0",
+  "description": "Maintained fork of flat — flatten/unflatten nested objects, now dual ESM + CommonJS (require() works again), with bundled TypeScript types and a CHANGELOG",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "bin": {
+    "flat2": "cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "cli.js",
+    "dist/",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "node --test test/*.test.js",
+    "test-types": "tsc --noEmit --strict test/type-declarations.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bybraveHQ/flat2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bybraveHQ/flat2/issues"
+  },
+  "homepage": "https://github.com/bybraveHQ/flat2#readme",
+  "keywords": [
+    "flat",
+    "flatten",
+    "unflatten",
+    "json",
+    "nested",
+    "object",
+    "delimiter",
+    "esm",
+    "commonjs",
+    "typescript"
+  ],
+  "author": "bybrave (https://github.com/bybraveHQ)",
+  "contributors": [
+    "Hugh Kennedy <hughskennedy@gmail.com> (author of the original flat)"
+  ],
+  "license": "BSD-3-Clause",
+  "funding": "https://ko-fi.com/bybrave",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "esbuild": "^0.23.0",
+    "typescript": "^5.5.0"
+  }
+}
