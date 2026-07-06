@@ -1,6 +1,6 @@
 {
   "name": "@bybrave/flat2",
-  "version": "6.0.1",
+  "version": "6.0.2",
   "description": "Maintained fork of flat — flatten/unflatten nested objects, with bundled TypeScript types, improved generics, a CHANGELOG, and dual ESM + CommonJS packaging",
   "type": "module",
   "main": "./dist/index.cjs",
