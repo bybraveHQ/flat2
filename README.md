@@ -3,10 +3,10 @@
 **Maintained, drop-in fork of [`flat`](https://github.com/hughsk/flat)** — take a
 nested JavaScript object and flatten it, or unflatten an object with delimited keys.
 
-The original `flat` has had no npm release since 2023, and its v6 went **ESM-only**,
-stranding every CommonJS consumer on `require()` (`ERR_REQUIRE_ESM`). `@bybrave/flat2`
-ships the **exact same flatten/unflatten algorithm** (verified byte-for-byte against
-`flat@6.0.1`) with the packaging and types fixed.
+The original `flat` has had no npm release since 2023, ships **no bundled TypeScript
+types**, and its v6 went **ESM-only**. `@bybrave/flat2` ships the **exact same
+flatten/unflatten algorithm** (verified byte-for-byte against `flat@6.0.1`) —
+maintained, fully typed, and packaged as dual ESM + CommonJS.
 
 ```
 npm install @bybrave/flat2
@@ -16,11 +16,11 @@ npm install @bybrave/flat2
 
 | Fix | Upstream issues |
 |---|---|
-| **Dual ESM + CommonJS** — `require()` works again, `import` too | #101 (👍18), #173, #171, #175 |
+| **Alive & maintained** — published again, CI on Node 18/20/22 | #137, #156, #110 |
 | **Bundled TypeScript types**, guaranteed in the tarball (no `@types/flat`) | #162 |
 | **Improved generics** — result type is `Record<string, any>`, not `unknown` | #179 |
 | **A CHANGELOG** | #76 (👍13) |
-| **Alive & published**, CI on Node 18/20/22 | #137, #156, #110 |
+| **Dual ESM + CommonJS** — `require()` works on every Node, including <20.19 / <22.12 where `flat` v6 throws `ERR_REQUIRE_ESM` | #101 (👍18), #173, #171, #175 |
 
 Zero runtime dependencies — same as the original.
 

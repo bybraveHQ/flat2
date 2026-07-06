@@ -1,7 +1,7 @@
 {
   "name": "@bybrave/flat2",
   "version": "6.0.1",
-  "description": "Maintained fork of flat — flatten/unflatten nested objects, now dual ESM + CommonJS (require() works again), with bundled TypeScript types and a CHANGELOG",
+  "description": "Maintained fork of flat — flatten/unflatten nested objects, with bundled TypeScript types, improved generics, a CHANGELOG, and dual ESM + CommonJS packaging",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./index.js",
