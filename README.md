@@ -112,6 +112,15 @@ The prototype-pollution guard from upstream (`__proto__` keys are ignored during
 `unflatten`) is retained and covered by a regression test. When processing
 untrusted input, also bound recursion with `maxDepth`.
 
+## Support
+
+If this package saves you time, you can support maintenance:
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-buy%20me%20a%20coffee-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/bybrave)
+[![Bitcoin](https://img.shields.io/badge/Bitcoin-BTC-F7931A?logo=bitcoin&logoColor=white)](#support)
+
+Bitcoin (BTC): `bc1q37557q5jpeaxqydzwvf3jgj7zhnfpn2td3q40q`
+
 ## License
 
 BSD-3-Clause. Original © 2014 Hugh Kennedy; fork © 2026 bybrave. See [LICENSE](./LICENSE).
